@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- *
- * printf_hex_aux - prints an hexgecimal number.
+ * printf_hex_aux - prints an hexdecimal number.
  *
  * @num: arguments.
  *
@@ -11,9 +10,7 @@
  */
 
 int printf_hex_aux(unsigned long int num)
-
 {
-
 long int i;
 long int *array;
 long int counter = 0;
@@ -24,7 +21,7 @@ num /= 16;
 counter++;
 }
 counter++;
-array = malloc(counter * sizeof(long int));
+array = malloc(counter *sizeof(long int));
 for (i = 0; i < counter; i++)
 {
 array[i] = temp % 16;
